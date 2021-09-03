@@ -1275,18 +1275,54 @@ declare namespace jasmine {
 
 declare module "jasmine" {
     class jasmine {
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         jasmine: jasmine.Jasmine;
         env: jasmine.Env;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         reportersCount: number;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         completionReporter: jasmine.CustomReporter;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         reporter: jasmine.CustomReporter;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         showingColors: boolean;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         projectBaseDir: string;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         specDir: string;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         specFiles: string[];
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         helperFiles: string[];
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         requires: string[];
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         onCompleteCallbackAdded: boolean;
+        /**
+         * @deprecated Private member that may be changed or removed in the future
+         */
         defaultReporterConfigured: boolean;
 
         constructor(options: jasmine.JasmineOptions);
@@ -1301,17 +1337,32 @@ declare module "jasmine" {
         addSpecFile(filePath: string): void;
         addSpecFiles(files: string[]): void;
         addHelperFiles(files: string[]): void;
+        /**
+         * @deprecated Private method that may be changed or removed in the future
+         */
         addRequires(files: string[]): void;
         /**
          * Configure the default reporter.
          */
         configureDefaultReporter(options: jasmine.DefaultReporterOptions): void;
         execute(files?: string[], filterString?: string): Promise<void>;
+        /**
+         * @deprecated Private method that may be changed or removed in the future
+         */
         exitCodeCompletion(passed: boolean): void;
         loadConfig(config: jasmine.JasmineConfig): void;
         loadConfigFile(configFilePath?: string): void;
+        /**
+         * @deprecated Private method that may be changed or removed in the future
+         */
         loadHelpers(): Promise<void>;
+        /**
+         * @deprecated Private method that may be changed or removed in the future
+         */
         loadSpecs(): Promise<void>;
+        /**
+         * @deprecated Private method that may be changed or removed in the future
+         */
         loadRequires(): void;
         onComplete(onCompleteCallback: (passed: boolean) => void): void;
         /**
